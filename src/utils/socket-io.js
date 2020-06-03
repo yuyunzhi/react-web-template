@@ -4,7 +4,7 @@ import SocketIO from 'socket.io-client'
 const heartCheck = (socket, userId) => {
     let timeout = 0
 
-    window.setInterval(() => {
+    setInterval(() => {
         if (timeout <= 0) {
             socket.emit('refresh', { userId })
             timeout = 30
