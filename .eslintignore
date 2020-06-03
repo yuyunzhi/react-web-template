@@ -1,0 +1,8 @@
+node_modules/
+lib/
+es/
+dist/
+scripts/
+yarn.lock
+webpack.dev.config.js
+serviceWorker.js
