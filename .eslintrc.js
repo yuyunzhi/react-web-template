@@ -22,14 +22,40 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn", // 检查 effect 的依赖
     'import/no-unresolved': [1, { ignore: ['^@/'] }],
     'max-lines': ['error', 1000],
-    'max-lines-per-function': ['error', 1000],
     'jsx-control-statements/jsx-use-if-tag': 'off',
     indent: 'off',
     '@typescript-eslint/indent': 'off',
     'array-callback-return': 'warn',
     'consistent-return': 'warn',
     complexity: ['error', 20],
+    // function的长度
+    "max-lines-per-function":[
+      "error",
+      {
+        "max":70,
+        "skipBlankLines": true,
+        "skipComments": true,
+        "IIFEs": true
+      }
+    ],
     // 禁止三目运算嵌套三目运算
-    "no-nested-ternary": "error"
+    "no-nested-ternary": "error",
+    // 有多少层if else嵌套
+    "max-depth": ["error", 4],
+    // 单行代码的长度
+    "max-len": [
+      "error",
+      {
+        code: 250,
+        ignoreComments: true,
+        ignoreUrls: true,
+        ignoreTrailingComments: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true
+      }
+    ],
+    // 禁止在条件中使用常量表达式 if(true),if(1)
+    "no-constant-condition": 2,
   }
 }
