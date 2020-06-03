@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'normalize.css/normalize.css';
 
 function App() {
   return (
