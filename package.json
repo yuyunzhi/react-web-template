@@ -37,6 +37,7 @@
     "eslint-plugin-react-hooks": "^1.6.1",
     "file-loader": "4.3.0",
     "fs-extra": "^8.1.0",
+    "git-cz": "^4.6.2",
     "html-webpack-plugin": "4.0.0-beta.11",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
@@ -145,7 +146,5 @@
     "pre-commit": "^1.2.2",
     "prettier": "^2.0.5"
   },
-  "pre-commit": [
-    "lint"
-  ]
+  "pre-commit": [ "lint" ]
 }
