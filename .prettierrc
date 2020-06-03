@@ -1,0 +1,20 @@
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "semi": true,
+  "useTabs": false,
+  "arrowParens": "avoid",
+  "jsxSingleQuote": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "quoteProps": "as-needed",
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": { "parser": "json" }
+    }
+  ]
+}

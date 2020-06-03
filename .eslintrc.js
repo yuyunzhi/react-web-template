@@ -9,7 +9,7 @@ module.exports = {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "extends": "airbnb",
+  "extends": ["airbnb", "plugin:prettier/recommended"],
   "plugins": ["react-hooks"],
   "rules": {
     "react/jsx-filename-extension": [1, { extensions: [".js"] }], // 允许js文件使用jsx语法
@@ -23,10 +23,8 @@ module.exports = {
     'import/no-unresolved': [1, { ignore: ['^@/'] }],
     'max-lines': ['error', 1000],
     'jsx-control-statements/jsx-use-if-tag': 'off',
-    indent: 'off',
-    '@typescript-eslint/indent': 'off',
-    'array-callback-return': 'warn',
     'consistent-return': 'warn',
+    "no-unused-vars":0,
     complexity: ['error', 20],
     // function的长度
     "max-lines-per-function":[
